@@ -1,7 +1,7 @@
 <template>
-  <Disclosure as="header" class="bg-white shadow" v-slot="{ open }">
+  <Disclosure as="header" class="bg-white shadow relative" v-slot="{ open }">
     <div
-      class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8"
+      class="mx-auto max-w-6xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8 relative"
     >
       <nav
         class="hidden lg:flex lg:space-x-8 lg:py-2 items-center"
@@ -34,8 +34,12 @@
       </div>
     </div>
 
-    <DisclosurePanel as="nav" class="lg:hidden" aria-label="Global">
-      <div class="space-y-1 px-2 pt-2 pb-3">
+    <DisclosurePanel
+      as="nav"
+      class="lg:hidden absolute z-10 w-full"
+      aria-label="Global"
+    >
+      <div class="space-y-1 px-2 pt-2 pb-3 bg-gray-50 shadow rounded-b-md mr-5">
         <DisclosureButton
           v-for="item in navigation"
           :key="item.name"
