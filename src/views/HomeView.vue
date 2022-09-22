@@ -7,20 +7,20 @@
           src="@/assets/profile.jpg"
           class="h-48 w-48 m-5 rounded-full border-4 shadow-lg border-white -mt-32 lg:-mt-16"
         />
-        <div class="lg:m-5 mx-5 my-2">
+        <div class="lg:m-5 mx-5 my-2 text-center lg:text-left">
           <div class="text-3xl font-bold">Oliver Noles</div>
           <div class="lg:text-lg text-md mt-1 text-gray-400">
             Software Engineer from Auckland, New Zealand
           </div>
         </div>
-        <div class="ml-auto items-start flex m-3">
+        <div class="lg:ml-auto items-start flex m-3 w-full sm:w-fit">
           <div
-            class="border px-4 py-2 font-bold m-2 cursor-pointer rounded-md hover:bg-gray-50"
+            class="border whitespace-nowrap px-4 w-1/2 py-2 text-center font-bold m-2 cursor-pointer rounded-md hover:bg-gray-50"
           >
             View portfolio
           </div>
           <div
-            class="bg-blue-600 px-4 py-2 m-2 font-bold text-white cursor-pointer rounded-md hover:bg-blue-700 inline-flex items-center"
+            class="bg-blue-600 w-1/2 px-4 py-2 m-2 font-bold text-white cursor-pointer rounded-md hover:bg-blue-700 inline-flex items-center justify-center"
           >
             <svg
               class="-ml-1 mr-2 h-5 w-5"
