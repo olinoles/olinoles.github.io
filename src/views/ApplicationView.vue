@@ -39,7 +39,7 @@
       class="lg:hidden absolute z-10 w-full"
       aria-label="Global"
     >
-      <div class="space-y-1 px-2 pt-2 pb-3 bg-gray-50 shadow rounded-b-md mr-5">
+      <div class="space-y-1 px-2 pt-2 pb-3 bg-white shadow-md rounded-b-md">
         <DisclosureButton
           v-for="item in navigation"
           :key="item.name"
@@ -57,7 +57,7 @@
       </div>
     </DisclosurePanel>
   </Disclosure>
-  <router-view />
+  <router-view class="-mt-16 lg:mt-0" />
 </template>
 
 <script setup lang="ts">
