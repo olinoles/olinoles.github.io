@@ -1,12 +1,15 @@
 <template>
   <div class="overflow-hidden">
     <!-- Header background and intro -->
-    <canvas class="bg-green-400" id="granim-canvas" />
+    <div class="relative h-48">
+      <canvas class="bg-green-400" id="granim-canvas" />
+      <ParticleSection class="z-10 absolute top-0 w-full" />
+    </div>
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col lg:flex-row mb-5 items-center">
         <img
           src="@/assets/profile.jpg"
-          class="h-48 w-48 m-5 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
+          class="h-48 w-48 m-5 z-20 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
         />
         <div class="lg:m-5 mx-5 my-2 text-center lg:text-left">
           <div class="text-3xl font-bold">Oliver Noles</div>
@@ -51,6 +54,7 @@
 import granim from "granim";
 import { onMounted } from "vue";
 import AboutMe from "@/components/AboutMe.vue";
+import ParticleSection from "@/components/ParticlesSection.vue";
 
 onMounted(() => {
   new granim({
@@ -60,9 +64,8 @@ onMounted(() => {
     states: {
       "default-state": {
         gradients: [
-          ["#834D9B", "#D04ED6"],
           ["#1CD8D2", "#93EDC7"],
-          ["#4a4182", "#804182"],
+          ["#834D9B", "#D04ED6"],
         ],
       },
     },
@@ -72,6 +75,6 @@ onMounted(() => {
 
 <style>
 #granim-canvas {
-  @apply w-full lg:h-64 h-48;
+  @apply w-full lg:h-48 h-48;
 }
 </style>
