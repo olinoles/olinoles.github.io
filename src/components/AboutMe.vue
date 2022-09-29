@@ -16,10 +16,10 @@
         class="transition-height duration-300 ease-out overflow-hidden h-10"
       >
         <br />
-        Outside of software development, I enjoy hobbies such as snowboarding,
-        hiking, online thrift shopping for clothes, and have become a bit of an
-        electric vehicle nerd recently! I also have a cat named Chino who keeps
-        me company while working.
+        Outside of software development, I enjoy snowboarding, hiking, online
+        thrift shopping for clothes, and have become a bit of an electric
+        vehicle nerd recently! I also have a cat named Chino who keeps me
+        company while working.
         <br />
         <br />
         Thanks so much for visiting my online portfolio! If you wish to contact
