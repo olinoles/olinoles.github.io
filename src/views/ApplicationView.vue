@@ -1,7 +1,7 @@
 <template>
   <Disclosure
     as="header"
-    class="lg:bg-white dark:lg:bg-slate-800 lg:shadow lg:fixed z-10 w-full top-0"
+    class="lg:bg-white dark:lg:bg-slate-800 lg:shadow lg:fixed z-50 w-full top-0"
     v-slot="{ open }"
   >
     <div
@@ -21,17 +21,24 @@
           ]"
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</a
-        >
-        <div
-          @click="toggleDarkMode"
-          class="ml-auto cursor-pointer dark:text-slate-500 font-semibold select-none"
-        >
-          <img
-            :src="darkMode ? SunIcon : MoonIcon"
-            class="h-4 w-4 mr-1 inline-block"
-          />
-          {{ darkMode ? "Lights on" : "Lights off" }}
-        </div>
+        ><TransitionGroup name="slide-fade">
+          <div
+            v-if="darkMode"
+            @click="toggleDarkMode"
+            class="ml-auto cursor-pointer dark:text-slate-500 dark:hover:text-slate-200 font-semibold select-none"
+          >
+            <img :src="SunIcon" class="h-4 w-4 mr-1 inline-block" />
+            Lights on
+          </div>
+          <div
+            v-if="!darkMode"
+            @click="toggleDarkMode"
+            class="ml-auto cursor-pointer dark:text-slate-500 hover:text-slate-500 font-semibold select-none"
+          >
+            <img :src="MoonIcon" class="h-4 w-4 mr-1 inline-block" />
+            Lights off
+          </div>
+        </TransitionGroup>
       </nav>
 
       <div class="relative flex h-16 justify-between lg:hidden">
@@ -130,5 +137,15 @@ const navigation = [
 .dark h2,
 .dark h3 {
   @apply text-slate-200;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>
