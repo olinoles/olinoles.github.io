@@ -2,17 +2,20 @@
   <div class="overflow-hidden">
     <!-- Header background and intro -->
     <div class="relative h-48">
-      <canvas class="bg-green-400" id="granim-canvas" />
-      <ParticleSection class="z-10 absolute top-0 w-full" />
+      <canvas class="dark:hidden granim-canvas" id="granim-light" />
+      <canvas id="granim-dark" class="granim-canvas hidden dark:block" />
+      <Transition>
+        <ParticleSection v-if="darkMode" class="z-10 absolute top-0 w-full" />
+      </Transition>
     </div>
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col lg:flex-row mb-5 items-center">
         <img
           src="@/assets/profile.jpg"
-          class="h-48 w-48 m-5 z-20 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
+          class="select-none h-48 w-48 m-5 z-20 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
         />
         <div class="lg:m-5 mx-5 my-2 text-center lg:text-left">
-          <div class="text-3xl font-bold">Oliver Noles</div>
+          <div class="text-3xl font-bold select-none">Oliver Noles</div>
           <div class="lg:text-lg text-md mt-1 text-gray-400">
             Software Engineer from Auckland, New Zealand
           </div>
@@ -51,30 +54,42 @@
 </template>
 
 <script setup lang="ts">
-import granim from "granim";
-import { onMounted } from "vue";
+import { startGranim } from "@/utilities/granim";
+import { computed, onMounted, watch } from "vue";
 import AboutMe from "@/components/AboutMe.vue";
 import ParticleSection from "@/components/ParticlesSection.vue";
+import { useAppState } from "@/store/app";
+
+watch(
+  () => useAppState().darkMode,
+  () => {
+    restartGranim();
+  }
+);
+
+const darkMode = computed(() => useAppState().darkMode);
+
+function restartGranim() {
+  startGranim(true);
+  startGranim(false);
+}
 
 onMounted(() => {
-  new granim({
-    element: "#granim-canvas",
-    name: "granim",
-    opacity: [1, 1],
-    states: {
-      "default-state": {
-        gradients: [
-          ["#1CD8D2", "#93EDC7"],
-          ["#834D9B", "#D04ED6"],
-        ],
-      },
-    },
-  });
+  restartGranim();
 });
 </script>
 
 <style>
-#granim-canvas {
+.granim-canvas {
   @apply w-full lg:h-48 h-48;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

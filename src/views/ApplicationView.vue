@@ -74,7 +74,9 @@
       class="lg:hidden absolute z-10 w-full"
       aria-label="Global"
     >
-      <div class="space-y-1 px-2 pt-2 pb-3 bg-white shadow-md rounded-b-md">
+      <div
+        class="space-y-1 px-2 pt-2 pb-3 bg-white dark:bg-slate-800 dark:border shadow-md rounded-b-md"
+      >
         <DisclosureButton
           v-for="item in navigation"
           :key="item.name"
@@ -82,9 +84,9 @@
           :href="item.href"
           :class="[
             item.current
-              ? 'bg-gray-100 text-gray-900'
+              ? 'bg-gray-100 dark:bg-slate-700 text-gray-900'
               : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900',
-            'block rounded-md py-2 px-3 text-base font-medium',
+            'block rounded-md py-2 px-3 text-base dark:text-slate-400 font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</DisclosureButton
@@ -99,11 +101,15 @@
 
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
-import { ref } from "vue";
+import { useAppState } from "@/store/app";
+import { storeToRefs } from "pinia";
 import SunIcon from "@/assets/icons/sunicon.svg";
 import MoonIcon from "@/assets/icons/moonicon.svg";
 
-const darkMode = ref(
+const appStore = useAppState();
+const { darkMode } = storeToRefs(appStore);
+
+appStore.setDarkMode(
   localStorage.theme === "dark" ||
     (!("theme" in localStorage) &&
       window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -117,7 +123,7 @@ function toggleDarkMode() {
     document.documentElement.classList.add("dark");
     localStorage.theme = "dark";
   }
-  darkMode.value = !darkMode.value;
+  appStore.setDarkMode(!appStore.darkMode);
 }
 
 const navigation = [
