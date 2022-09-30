@@ -15,7 +15,7 @@
           class="select-none h-48 w-48 m-5 z-20 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
         />
         <div class="lg:m-5 mx-5 my-2 text-center lg:text-left">
-          <div class="text-3xl font-bold select-none">Oliver Noles</div>
+          <h1 class="text-3xl font-bold select-none">Oliver Noles</h1>
           <div class="lg:text-lg text-md mt-1 text-gray-400">
             Software Engineer from Auckland, New Zealand
           </div>
@@ -45,9 +45,9 @@
         </div>
       </div>
       <hr />
-      <!-- About me section -->
       <AboutMe />
       <hr />
+      <SkillsSection />
       <div class="mb-32" />
     </div>
   </div>
@@ -59,6 +59,7 @@ import { computed, onMounted, watch } from "vue";
 import AboutMe from "@/components/AboutMe.vue";
 import ParticleSection from "@/components/ParticlesSection.vue";
 import { useAppState } from "@/store/app";
+import SkillsSection from "../components/SkillsSection.vue";
 
 watch(
   () => useAppState().darkMode,
