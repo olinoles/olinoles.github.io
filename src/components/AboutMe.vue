@@ -8,22 +8,24 @@
       <br />
       <br />
       I am most experienced in front-end development with Javascript (including
-      mobile apps), and enjoy working with many front-end technologies including
-      Vue, React and React-native.
+      mobile apps), and have worked with many front-end technologies including
+      Vue, React and React-native. I really enjoy working with designers and UI
+      artists to create amazing experiences for end-users.
       <div
         ref="readmore"
         :class="!isCollapsed ? 'gradient--hidden' : ''"
         class="transition-height duration-300 ease-out overflow-hidden h-10"
       >
         <br />
-        Outside of software development, I enjoy snowboarding, hiking, online
-        thrift shopping for clothes, and have become a bit of an electric
-        vehicle nerd recently! I also have a cat named Chino who keeps me
+        Outside of work, I enjoy snowboarding, hiking, and play in a social
+        soccer league. I'm also a craft beer nerd and have recently been
+        interested electric vehicles! I'm very entrepreneurially minded and love
+        to talk startup ideas. I also have a cat named Chino who keeps me
         company while working.
         <br />
         <br />
-        Thanks so much for visiting my online portfolio! If you wish to contact
-        me, all my links are below.
+        Thanks so much for visiting my online portfolio. I'm very social, so
+        please get in touch!
         <img src="@/assets/chino.png" class="my-5 rounded" width="350" />
       </div>
       <div
