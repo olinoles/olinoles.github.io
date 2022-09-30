@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-9 gap-3 mt-10 mx-5 lg:mx-5 mb-10">
-    <h2 class="col-span-2 font-bold">About Oliver</h2>
+  <div class="grid grid-cols-7 sm:grid-cols-9 gap-3 mt-10 mx-5 lg:mx-5 mb-10">
+    <h2 class="col-span-2 font-bold whitespace-nowrap">About Oliver</h2>
     <div class="col-span-7">
       Hi, I'm Oliver! I'm an Auckland-based tech enthusiast experienced in web
       technologies, creative projects, and UI design. I love learning and am
@@ -35,7 +35,7 @@
         {{ isCollapsed ? "Read less" : "Read more" }}
       </div>
       <div
-        class="mt-10 rounded-md overflow-hidden grid grid-cols-4 gap-5 bg-sky-50 dark:bg-slate-800 dark:border dark:border-slate-600 p-5"
+        class="mt-10 rounded-md overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 bg-sky-50 dark:bg-slate-800 dark:border dark:border-slate-600 p-5"
       >
         <div>
           <p class="info-header">Location</p>
@@ -47,15 +47,39 @@
         </div>
         <div>
           <p class="info-header">Email</p>
-          <p class="info-body">oliver@noles.nz</p>
+          <p>
+            <a
+              ref="noreferrer"
+              target="_blank"
+              class="info-body"
+              href="mailto:oliver@noles.nz"
+              >oliver@noles.nz</a
+            >
+          </p>
         </div>
         <div>
           <p class="info-header">Github</p>
-          <p class="info-body">github.com/olinoles</p>
+          <p>
+            <a
+              ref="noreferrer"
+              target="_blank"
+              class="info-body"
+              href="https://github.com/olinoles"
+              >@olinoles</a
+            >
+          </p>
         </div>
         <div>
           <p class="info-header">LinkedIn</p>
-          <p class="info-body">linkedin.com/in/olivernoles</p>
+          <p>
+            <a
+              ref="noreferrer"
+              target="_blank"
+              class="info-body"
+              href="https://linkedin.com/in/olivernoles"
+              >@olivernoles</a
+            >
+          </p>
         </div>
       </div>
     </div>
