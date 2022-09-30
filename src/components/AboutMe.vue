@@ -24,7 +24,7 @@
         company while working.
         <br />
         <br />
-        Thanks so much for visiting my online portfolio. I'm very social, so
+        Thanks so much for visiting my online portfolio. If you'd like to chat,
         please get in touch!
         <img src="@/assets/chino.png" class="my-5 rounded" width="350" />
       </div>
