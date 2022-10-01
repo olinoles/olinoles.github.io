@@ -13,8 +13,8 @@ const lightGradients = [
   ["#ebbf46", "#489e16"],
 ];
 export function startGranim(isDark: boolean) {
-  new granim({
-    element: isDark ? "#granim-dark" : "#granim-light",
+  return new granim({
+    element: "#granim-canvas",
     name: "granim",
     opacity: [1, 1],
     states: {

@@ -2,8 +2,7 @@
   <div class="overflow-hidden">
     <!-- Header background and intro -->
     <div class="relative h-48">
-      <canvas class="granim-canvas dark:hidden" id="granim-light" />
-      <canvas id="granim-dark" class="granim-canvas hidden dark:block" />
+      <canvas class="granim-canvas" id="granim-canvas" />
       <Transition>
         <ParticleSection v-if="darkMode" class="absolute top-0 z-10 w-full" />
       </Transition>
@@ -55,7 +54,7 @@
 
 <script setup lang="ts">
 import { startGranim } from "@/utilities/granim";
-import { computed, onMounted, watch } from "vue";
+import { computed, onMounted, ref, type Ref, watch } from "vue";
 import AboutMe from "@/components/AboutMe.vue";
 import ParticleSection from "@/components/ParticlesSection.vue";
 import { useAppState } from "@/store/app";
@@ -69,10 +68,11 @@ watch(
 );
 
 const darkMode = computed(() => useAppState().darkMode);
+const granimInstance: Ref<any | null> = ref(null);
 
 function restartGranim() {
-  startGranim(true);
-  startGranim(false);
+  if (granimInstance.value) granimInstance.value.destroy();
+  granimInstance.value = startGranim(darkMode.value);
 }
 
 onMounted(() => {
