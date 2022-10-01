@@ -50,11 +50,6 @@ export const skills = [
     darkImage: "src/assets/skills/figma_dark.svg",
   },
   {
-    name: "Node",
-    image: "src/assets/skills/node.svg",
-    darkImage: "src/assets/skills/node_dark.svg",
-  },
-  {
     name: "Git",
     image: "src/assets/skills/git.svg",
     darkImage: "src/assets/skills/git_dark.svg",
