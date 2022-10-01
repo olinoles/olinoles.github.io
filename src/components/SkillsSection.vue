@@ -1,38 +1,49 @@
 <template>
   <div
-    class="mx-8 my-10 flex flex-col md:flex-row rounded-md p-5 bg-slate-50 dark:bg-transparent"
+    class="mx-8 my-20 flex flex-col items-center rounded-md p-5 dark:bg-transparent md:flex-row lg:mx-3"
   >
-    <div class="my-3">
-      <h1 class="text-3xl sm:mx-0 md:text-left text-center mb-5">
-        Tools & Tech
-      </h1>
-      <p class="max-w-md md:text-left mx-auto md:ml-0 text-center">
-        I use a range of tools and technology to achieve success in my work.
-      </p>
-      <h3 class="mt-5 text-gray-600">Development</h3>
+    <div class="my-3 mb-10" id="skills-description">
+      <h1>My Tools & Tech</h1>
+      <p>I use a range of tools and technology to achieve success.</p>
+      <h3 class="skills-subheading">Development</h3>
       <p>
-        Javascript frameworks including Vue, React. Node API development and
-        serverless deployments.
+        <HighlightSpan text="Javascript" :highlightFn="highlightSkill" />
+        frameworks including
+        <HighlightSpan text="Vue" :highlightFn="highlightSkill" />,
+        <HighlightSpan text="React" :highlightFn="highlightSkill" />, and
+        <HighlightSpan text="Node" :highlightFn="highlightSkill" /> in the
+        backend.
       </p>
-      <h3 class="mt-5 text-gray-600">Design</h3>
+      <h3>Design</h3>
       <p>
-        I design with Adobe Creative Cloud using Photoshop, Illustrator, and XD.
+        I get creative with
+        <HighlightSpan text="Photoshop" :highlightFn="highlightSkill" />,
+        <HighlightSpan text="Illustrator" :highlightFn="highlightSkill" />, and
+        <HighlightSpan text="Figma" :highlightFn="highlightSkill" />.
+      </p>
+      <h3>Deployment</h3>
+      <p>
+        I've deployed projects on
+        <HighlightSpan text="AWS" :highlightFn="highlightSkill" />,
+        <HighlightSpan text="Firebase" :highlightFn="highlightSkill" />, and
+        <HighlightSpan text="Github" :highlightFn="highlightSkill" />.
       </p>
     </div>
     <div
-      class="flex flex-row flex-wrap justify-center max-w-lg lg:max-w-3xl mx-auto skill-container px-5 lg:px-24"
+      class="skill-container mx-auto flex max-w-xl flex-row flex-wrap justify-center md:max-w-lg lg:max-w-2xl lg:px-12"
     >
       <div
-        class="skill-icon flex flex-col my-3"
+        class="skill-icon my-3 flex flex-col"
+        :class="highlightedSkill === skill.name && 'highlighted-skill'"
         v-for="(skill, index) in skills"
         :key="`skill-${index}`"
       >
         <img
-          class="h-10 w-10 dark:brightness-90 mx-6 my-2"
+          class="mx-6 my-2 h-10 w-10 dark:brightness-90"
           :src="darkMode ? skill.darkImage : skill.image"
         />
         <div
-          class="text-center sm:opacity-0 text-xs skill-text text-gray-500 dark:text-gray-300 font-medium"
+          class="skill-text text-center text-xs font-medium text-gray-500 dark:text-gray-300 sm:opacity-0"
         >
           {{ skill.name }}
         </div>
@@ -44,9 +55,16 @@
 <script setup lang="ts">
 import { skills } from "@/utilities/constants";
 import { useAppState } from "@/store/app";
-import { computed } from "vue";
+import { computed, ref } from "vue";
+import HighlightSpan from "./HighlightSpan.vue";
 
 const darkMode = computed(() => useAppState().darkMode);
+
+const highlightedSkill = ref("");
+
+function highlightSkill(skill: string) {
+  highlightedSkill.value = skill;
+}
 </script>
 
 <style>
@@ -56,15 +74,34 @@ const darkMode = computed(() => useAppState().darkMode);
   background-repeat: no-repeat;
 }
 .skill-icon img {
-  @apply ease-in-out transform duration-300;
+  @apply transform duration-300 ease-in-out;
 }
-.skill-icon:hover img {
+.skill-icon:hover img,
+.highlighted-skill img {
   @apply -translate-y-3 scale-125;
 }
-.skill-icon:hover img svg {
-  @apply fill-white;
+.skill-icon:hover .skill-text,
+.highlighted-skill .skill-text {
+  @apply transform opacity-100 duration-100 ease-in-out;
 }
-.skill-icon:hover .skill-text {
-  @apply opacity-100 transform duration-100 ease-in-out;
+#skills-description h1 {
+  @apply mb-5 text-center text-3xl dark:text-sky-100 sm:mx-0 md:text-left;
+}
+#skills-description h3 {
+  @apply mt-3 mb-1 text-gray-600 dark:text-sky-400;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: none;
+    animation-timing-function: ease-in-out;
+  }
+}
+.animate-float {
+  animation: float 1s infinite;
 }
 </style>

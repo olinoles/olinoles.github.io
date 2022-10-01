@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-7 sm:grid-cols-9 gap-3 my-10 mx-8 lg:mx-5">
-    <h2 class="col-span-2 font-bold whitespace-nowrap">About me</h2>
+  <div class="mx-8 mt-10 mb-20 grid grid-cols-7 gap-3 sm:grid-cols-9 lg:mx-5">
+    <h2 class="col-span-2 whitespace-nowrap text-lg font-bold">About me</h2>
     <div class="col-span-7">
       Hi, I'm Oliver! I'm an Auckland-based tech enthusiast experienced in web
       technologies, creative projects, and UI design. I love learning and am
@@ -13,15 +13,15 @@
       artists to create amazing experiences for end-users.
       <div
         ref="readmore"
-        :class="!isCollapsed ? 'gradient--hidden' : ''"
-        class="transition-height duration-300 ease-out overflow-hidden h-10"
+        :class="!isCollapsed && 'gradient--hidden'"
+        class="transition-height h-10 overflow-hidden duration-300 ease-out"
       >
         <br />
         Outside of work, I enjoy snowboarding, hiking, and play in a social
         soccer league. I'm also a craft beer nerd and have recently been
         interested electric vehicles! I'm very entrepreneurially minded and love
-        to talk startup ideas. I also have a cat named Chino who keeps me
-        company while working.
+        to talk startup ideas. I also have a cat named Chino who distracts me
+        while working.
         <br />
         <br />
         Thanks so much for visiting my online portfolio. If you'd like to chat,
@@ -29,21 +29,21 @@
         <img src="@/assets/chino.png" class="my-5 rounded" width="350" />
       </div>
       <div
-        class="font-semibold text-slate-500 hover:text-slate-400 cursor-pointer my-3"
+        class="my-3 cursor-pointer font-semibold text-slate-500 hover:text-slate-400"
         @click="readMoreClicked()"
       >
         {{ isCollapsed ? "Read less" : "Read more" }}
       </div>
       <div
-        class="mt-10 rounded-md overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 bg-sky-50 dark:bg-slate-800 dark:border dark:border-slate-600 p-5"
+        class="mt-10 grid grid-cols-1 gap-5 overflow-hidden rounded-md bg-sky-50 p-5 dark:border dark:border-slate-600 dark:bg-slate-800 sm:grid-cols-2 lg:grid-cols-4"
       >
         <div>
           <p class="info-header">Location</p>
           <img
             src="@/assets/icons/nz-icon.svg"
-            class="h-4 w-4 mr-2 inline-block"
+            class="mr-2 inline-block h-4 w-4"
           />
-          <p class="inline-block info-body">Auckland, NZ</p>
+          <p class="info-body inline-block">Auckland, NZ</p>
         </div>
         <div>
           <p class="info-header">Email</p>
@@ -121,7 +121,7 @@ function readMoreClicked() {
   );
 }
 .info-header {
-  @apply font-bold text-sm mb-2 text-blue-400;
+  @apply mb-2 text-sm font-bold text-blue-400;
 }
 .info-body {
   @apply font-bold text-blue-500;

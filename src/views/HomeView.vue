@@ -2,32 +2,32 @@
   <div class="overflow-hidden">
     <!-- Header background and intro -->
     <div class="relative h-48">
-      <canvas class="dark:hidden granim-canvas" id="granim-light" />
+      <canvas class="granim-canvas dark:hidden" id="granim-light" />
       <canvas id="granim-dark" class="granim-canvas hidden dark:block" />
       <Transition>
-        <ParticleSection v-if="darkMode" class="z-10 absolute top-0 w-full" />
+        <ParticleSection v-if="darkMode" class="absolute top-0 z-10 w-full" />
       </Transition>
     </div>
-    <div class="max-w-6xl mx-auto">
-      <div class="flex flex-col lg:flex-row mb-5 items-center">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-5 flex flex-col items-center lg:flex-row">
         <img
           src="@/assets/profile.jpg"
-          class="select-none h-48 w-48 m-5 z-20 rounded-full border-4 shadow-lg border-white dark:border-slate-900 -mt-32 lg:-mt-16 transition ease-in hover:scale-110"
+          class="z-20 m-5 -mt-32 h-48 w-48 select-none rounded-full border-4 border-white shadow-lg transition ease-in hover:scale-110 dark:border-slate-900 lg:-mt-16"
         />
-        <div class="lg:m-5 mx-5 my-2 text-center lg:text-left">
-          <h1 class="text-3xl font-bold select-none">Oliver Noles</h1>
-          <div class="lg:text-lg text-md mt-1 text-gray-400">
+        <div class="mx-5 my-2 text-center lg:m-5 lg:text-left">
+          <h1 class="select-none text-3xl font-bold">Oliver Noles</h1>
+          <div class="text-md mt-1 text-gray-400 lg:text-lg">
             Software Engineer from Auckland, New Zealand
           </div>
         </div>
-        <div class="lg:ml-auto items-start flex m-3 w-full sm:w-fit">
+        <div class="m-3 flex w-full items-start sm:w-fit lg:ml-auto">
           <div
-            class="border dark:border-slate-700 whitespace-nowrap px-4 w-1/2 py-2 text-center font-bold m-2 cursor-pointer rounded-md hover:bg-gray-50 dark:hover:bg-slate-700"
+            class="m-2 w-1/2 cursor-pointer whitespace-nowrap rounded-md border px-4 py-2 text-center font-bold hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-700"
           >
             View projects
           </div>
           <div
-            class="bg-blue-600 w-1/2 px-4 py-2 m-2 font-bold text-white cursor-pointer rounded-md hover:bg-blue-700 inline-flex items-center justify-center"
+            class="m-2 inline-flex w-1/2 cursor-pointer items-center justify-center rounded-md bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700"
           >
             <svg
               class="-ml-1 mr-2 h-5 w-5"
@@ -82,7 +82,7 @@ onMounted(() => {
 
 <style>
 .granim-canvas {
-  @apply w-full lg:h-48 h-48;
+  @apply h-48 w-full lg:h-48;
 }
 .v-enter-active,
 .v-leave-active {
