@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-7 sm:grid-cols-9 gap-3 my-10 mx-5 lg:mx-5">
+  <div class="grid grid-cols-7 sm:grid-cols-9 gap-3 my-10 mx-8 lg:mx-5">
     <h2 class="col-span-2 font-bold whitespace-nowrap">About me</h2>
     <div class="col-span-7">
       Hi, I'm Oliver! I'm an Auckland-based tech enthusiast experienced in web

@@ -8,7 +8,9 @@
       class="mx-auto max-w-6xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 relative"
     >
       <nav class="hidden lg:flex lg:py-2 items-center" aria-label="Global">
-        <div class="text-lg dark:text-white font-bold mr-10">Oliver</div>
+        <div class="text-lg dark:text-white font-bold mr-10 select-none">
+          Oliver
+        </div>
         <a
           v-for="item in navigation"
           :key="item.name"
