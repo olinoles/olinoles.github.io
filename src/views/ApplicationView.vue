@@ -93,6 +93,23 @@
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</DisclosureButton
         >
+        <a
+          @click="toggleDarkMode"
+          class="flex w-fit items-center rounded-md py-2 px-3 text-base dark:text-slate-400 font-medium"
+          >Dark mode<Switch
+            :class="
+              darkModeSwitch
+                ? 'bg-gray-600 dark:bg-slate-900'
+                : 'bg-gray-400 dark:bg-slate-700'
+            "
+            class="ml-3 relative inline-flex h-[28px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          >
+            <span
+              aria-hidden="true"
+              :class="darkModeSwitch ? 'translate-x-9' : 'translate-x-0'"
+              class="pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+            /> </Switch
+        ></a>
       </div>
     </DisclosurePanel>
   </Disclosure>
@@ -102,14 +119,21 @@
 </template>
 
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Switch,
+} from "@headlessui/vue";
 import { useAppState } from "@/store/app";
 import { storeToRefs } from "pinia";
 import SunIcon from "@/assets/icons/sunicon.svg";
 import MoonIcon from "@/assets/icons/moonicon.svg";
+import { ref } from "vue";
 
 const appStore = useAppState();
 const { darkMode } = storeToRefs(appStore);
+const darkModeSwitch = ref(darkMode);
 
 appStore.setDarkMode(
   localStorage.theme === "dark" ||
