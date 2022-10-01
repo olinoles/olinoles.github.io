@@ -40,6 +40,11 @@ export const skills = [
     darkImage: "src/assets/skills/aws_dark.svg",
   },
   {
+    name: "Firebase",
+    image: "src/assets/skills/firebase.svg",
+    darkImage: "src/assets/skills/firebase_dark.svg",
+  },
+  {
     name: "Docker",
     image: "src/assets/skills/docker.svg",
     darkImage: "src/assets/skills/docker_dark.svg",
@@ -50,9 +55,9 @@ export const skills = [
     darkImage: "src/assets/skills/figma_dark.svg",
   },
   {
-    name: "Git",
-    image: "src/assets/skills/git.svg",
-    darkImage: "src/assets/skills/git_dark.svg",
+    name: "Github",
+    image: "src/assets/skills/github.svg",
+    darkImage: "src/assets/skills/github_dark.svg",
   },
   {
     name: "GraphQL",
