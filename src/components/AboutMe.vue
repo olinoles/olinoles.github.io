@@ -10,16 +10,19 @@
       My specialty is SaaS platforms and Ecommerce. I've helped businesses build
       large-scale Ecommerce sites and successful SaaS platforms.
       <br />
-      <br />
-      I am most experienced in front-end development with Javascript (including
-      mobile apps), and have worked with many front-end technologies including
-      Vue, React and React-native. I really enjoy working with designers and UI
-      artists to create amazing experiences for end-users.
+
       <div
         ref="readmore"
         :class="!isCollapsed && 'gradient--hidden'"
         class="transition-height h-10 overflow-hidden duration-300 ease-out"
       >
+        <br />
+        I am most experienced in front-end development with Javascript
+        (including mobile apps), and have worked with many front-end
+        technologies including Vue, React and React-native. I really enjoy
+        working with designers and UI artists to create amazing experiences for
+        end-users.
+        <br />
         <br />
         Outside of work, I enjoy snowboarding, hiking, and play in a social
         soccer league. I'm also a craft beer nerd and have recently been
