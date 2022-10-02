@@ -69,7 +69,7 @@ function highlightSkill(skill: string) {
 
 <style>
 .dark .skill-container {
-  background: rgb(33, 59, 121);
+  background: #0f172a;
   background: radial-gradient(#152447, #0f172a, #0f172a);
   background-repeat: no-repeat;
 }
