@@ -18,14 +18,9 @@ const particles = {
     polygon: {
       nb_sides: 5,
     },
-    image: {
-      src: "img/github.svg",
-      width: 100,
-      height: 100,
-    },
   },
   opacity: {
-    value: 0.15,
+    value: 0.25,
     random: false,
     anim: {
       enable: true,
@@ -55,10 +50,10 @@ const particles = {
     enable: true,
     gravity: {
       enable: true,
-      acceleration: 1,
+      acceleration: 0.1,
       maxSpeed: 0.05,
     },
-    speed: 0.2,
+    speed: 0.5,
     direction: "none",
     random: true,
     straight: false,
