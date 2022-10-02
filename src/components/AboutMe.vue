@@ -7,6 +7,10 @@
       always striving to gain new skills and experiences.
       <br />
       <br />
+      My specialty is SaaS platforms and Ecommerce. I've helped businesses build
+      large-scale Ecommerce sites and successful SaaS platforms.
+      <br />
+      <br />
       I am most experienced in front-end development with Javascript (including
       mobile apps), and have worked with many front-end technologies including
       Vue, React and React-native. I really enjoy working with designers and UI
