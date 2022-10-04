@@ -7,8 +7,9 @@
       always striving to gain new skills and experiences.
       <br />
       <br />
-      My specialty is SaaS platforms and Ecommerce. I've helped businesses build
-      large-scale Ecommerce sites and successful SaaS platforms.
+      My specialty is building Front-end experiences for SaaS platforms and
+      Ecommerce. I've helped businesses build large-scale Ecommerce sites and
+      launch successful SaaS platforms.
       <br />
 
       <div
