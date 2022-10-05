@@ -49,11 +49,11 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "KiwiQuads is an Ecommerce business I cofounded in 2017. As the technical cofounder, I was resposible for building the website and automating our ecommerce operations.\n\nI chose Wordpress and WooCommerce for the site as it is highly customisable and open source. I was able to build the website in PHP and Javascript to our exact specifications.\n\nThe business is still running under new ownership and has been largely successful.",
+      "KiwiQuads is an Ecommerce business I cofounded in 2017. As the technical cofounder, I was responsible for building the website and automating our ecommerce operations.\n\nI chose Wordpress and WooCommerce for the site as it is highly customisable and open source. I was able to build the website in PHP and Javascript to our exact specifications. I also did the DevOps for this website which were demanding as we had over 2000 products and 10,000 monthly shoppers.\n\nThe business is still running under new ownership and has been largely successful.",
     skills: ["Wordpress", "PHP", "Javascript"],
   },
   {
-    name: "Ecommerce Order Dispatch",
+    name: "Ecommerce Fulfillment SaaS",
     gallery: [
       {
         src: "src/assets/projects/dispatch/main.jpg",
@@ -69,8 +69,8 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "I was contracted by Lime Digital to build this web platform for Surf Life Saving NZ. This SPA uses a Google Firebase backend to power a real-time incident reporting platform for use by SLS NZ staff.\n\n The platform uses VueJS and a UI library for the front-end. I worked closely with a designer and project owner to help build the application ready for the 2022 Summer release. \n\nPrior to this project, I hadn't worked with Firebase or any Map libraries, so I enjoyed taking on the challenge of learning and implementing these technologies into this project to achieve its goals.",
-    skills: ["Vue", "Javascript", "GraphQL", "C#"],
+      "Astroship is an Ecommerce SaaS startup I cofounded in 2021. The software aims to automate the Ecommerce fulfillment flow from when orders are placed, to when they are shipped to the customer. The software integrates with Ecommerce platforms such as Shopify and WooCommerce to import business data.\n\nI was the developer responsible for building both the front-end and back-ends for this platform. The front-end uses the latest Vue3 Composition API with Typescript and has CSS powered by Tailwind.\nThe backend is a serverless API powered by NoSQL DynamoDB and AWS Lambda.",
+    skills: ["Vue", "Javascript", "NoSQL", "Node API"],
   },
   {
     name: "TheMarket Storefront",
@@ -106,12 +106,6 @@ export const projects: Project[] = [
       },
       {
         src: "src/assets/projects/ascolour/3.jpg",
-      },
-      {
-        src: "src/assets/projects/ascolour/4.jpg",
-      },
-      {
-        src: "src/assets/projects/ascolour/4.jpg",
       },
       {
         src: "src/assets/projects/ascolour/4.jpg",
