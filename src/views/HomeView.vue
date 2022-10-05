@@ -47,6 +47,8 @@
       <AboutMe />
       <hr />
       <SkillsSection />
+      <hr />
+      <ProjectsSection />
       <div class="mb-32" />
     </div>
   </div>
@@ -59,6 +61,7 @@ import AboutMe from "@/components/AboutMe.vue";
 import ParticleSection from "@/components/ParticlesSection.vue";
 import { useAppState } from "@/store/app";
 import SkillsSection from "../components/SkillsSection.vue";
+import ProjectsSection from "../components/ProjectsSection.vue";
 
 watch(
   () => useAppState().darkMode,

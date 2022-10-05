@@ -1,14 +1,14 @@
 <template>
   <Disclosure
     as="header"
-    class="lg:bg-white dark:lg:bg-slate-800 lg:shadow lg:fixed z-50 w-full top-0"
+    class="top-0 z-50 w-full lg:fixed lg:bg-white lg:shadow-md dark:lg:bg-slate-800"
     v-slot="{ open }"
   >
     <div
-      class="mx-auto max-w-6xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 relative"
+      class="relative mx-auto max-w-6xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200"
     >
-      <nav class="hidden lg:flex lg:py-2 items-center" aria-label="Global">
-        <div class="text-lg dark:text-white font-bold mr-10 select-none">
+      <nav class="hidden items-center lg:flex lg:py-2" aria-label="Global">
+        <div class="mr-10 select-none text-lg font-bold dark:text-white">
           Oliver
         </div>
         <a
@@ -17,9 +17,9 @@
           :href="item.href"
           :class="[
             item.current
-              ? 'bg-gray-100 dark:bg-slate-600 text-gray-900 dark:text-slate-300'
-              : 'text-gray-900 dark:text-slate-500 hover:bg-gray-50 dark:hover:bg-slate-700 hover:text-gray-900',
-            'rounded-md py-2 px-3 inline-flex items-center text-sm font-medium mx-3',
+              ? 'bg-gray-100 text-gray-900 dark:bg-slate-600 dark:text-slate-300'
+              : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-500 dark:hover:bg-slate-700',
+            'mx-3 inline-flex items-center rounded-md py-2 px-3 text-sm font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</a
@@ -27,17 +27,17 @@
           <div
             v-if="darkMode"
             @click="toggleDarkMode"
-            class="ml-auto cursor-pointer dark:text-slate-500 dark:hover:text-slate-200 font-semibold select-none"
+            class="ml-auto cursor-pointer select-none font-semibold dark:text-slate-500 dark:hover:text-slate-200"
           >
-            <img :src="SunIcon" class="h-4 w-4 mr-1 inline-block" />
+            <img :src="SunIcon" class="mr-1 inline-block h-4 w-4" />
             Lights on
           </div>
           <div
             v-if="!darkMode"
             @click="toggleDarkMode"
-            class="ml-auto cursor-pointer dark:text-slate-500 hover:text-slate-500 font-semibold select-none"
+            class="ml-auto cursor-pointer select-none font-semibold hover:text-slate-500 dark:text-slate-500"
           >
-            <img :src="MoonIcon" class="h-4 w-4 mr-1 inline-block" />
+            <img :src="MoonIcon" class="mr-1 inline-block h-4 w-4" />
             Lights off
           </div>
         </TransitionGroup>
@@ -73,11 +73,11 @@
 
     <DisclosurePanel
       as="nav"
-      class="lg:hidden absolute z-10 w-full"
+      class="absolute z-10 w-full lg:hidden"
       aria-label="Global"
     >
       <div
-        class="space-y-1 px-2 pt-2 pb-3 bg-white dark:bg-slate-800 dark:border shadow-md rounded-b-md"
+        class="space-y-1 rounded-b-md bg-white px-2 pt-2 pb-3 shadow-md dark:border dark:bg-slate-800"
       >
         <DisclosureButton
           v-for="item in navigation"
@@ -86,23 +86,23 @@
           :href="item.href"
           :class="[
             item.current
-              ? 'bg-gray-100 dark:bg-slate-700 text-gray-900'
+              ? 'bg-gray-100 text-gray-900 dark:bg-slate-700'
               : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900',
-            'block rounded-md py-2 px-3 text-base dark:text-slate-400 font-medium',
+            'block rounded-md py-2 px-3 text-base font-medium dark:text-slate-400',
           ]"
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</DisclosureButton
         >
         <a
           @click="toggleDarkMode"
-          class="flex w-fit items-center rounded-md py-2 px-3 text-base dark:text-slate-400 font-medium"
+          class="flex w-fit items-center rounded-md py-2 px-3 text-base font-medium dark:text-slate-400"
           >Dark mode<Switch
             :class="
               darkModeSwitch
                 ? 'bg-gray-600 dark:bg-slate-900'
                 : 'bg-gray-400 dark:bg-slate-700'
             "
-            class="ml-3 relative inline-flex h-[28px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+            class="relative ml-3 inline-flex h-[28px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
           >
             <span
               aria-hidden="true"
@@ -114,7 +114,7 @@
     </DisclosurePanel>
   </Disclosure>
   <router-view
-    class="-mt-16 lg:mt-0 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-400"
+    class="-mt-16 bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-400 lg:mt-0"
   />
 </template>
 

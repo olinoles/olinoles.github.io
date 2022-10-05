@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-8 my-20 flex flex-col items-center rounded-md p-5 dark:bg-transparent md:flex-row lg:mx-3"
+    class="mx-8 my-20 flex flex-col items-center rounded-md md:flex-row lg:mx-3"
   >
     <div class="my-3 mb-10 max-w-md" id="skills-description">
       <h1>My Tools & Tech</h1>
@@ -28,6 +28,7 @@
         <HighlightSpan text="Firebase" :highlightFn="highlightSkill" />, and
         <HighlightSpan text="Github" :highlightFn="highlightSkill" />.
       </p>
+      <h3>+ More skills listed on CV</h3>
     </div>
     <div class="skill-container">
       <div
@@ -106,10 +107,12 @@ function highlightSkill(skill: string) {
   100% {
     transform: translateY(-10%);
     animation-timing-function: ease-in-out;
+    opacity: 100%;
   }
   50% {
     transform: none;
     animation-timing-function: ease-in-out;
+    opacity: 75%;
   }
 }
 .animate-float {
