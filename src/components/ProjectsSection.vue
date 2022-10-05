@@ -14,6 +14,7 @@
         <span
           v-for="(skill, index) in project.skills"
           :key="`skill-${index}`"
+          :style="`animation-delay: ${index * 130}ms`"
           class="my-1 mr-2 inline-block flex-shrink-0 rounded-full bg-rose-100 px-2 py-0.5 text-xs font-medium text-rose-800 dark:bg-slate-700 dark:text-indigo-200 dark:group-hover:bg-indigo-900"
           >{{ skill }}</span
         >
@@ -37,5 +38,19 @@ import { projects } from "@/utilities/projects";
 }
 h1 {
   @apply mb-5 text-center text-3xl dark:text-sky-100 sm:mx-0 md:text-left;
+}
+@keyframes glow {
+  0%,
+  100% {
+    filter: opacity(1);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    filter: opacity(0.6);
+    animation-timing-function: ease-in-out;
+  }
+}
+.project-card:hover span {
+  animation: glow 300ms;
 }
 </style>
