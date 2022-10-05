@@ -10,7 +10,7 @@
         :key="`project-${index}`"
         @click="selectedProject = project"
       >
-        <img :src="project.photo.src" class="h-40 border object-cover" />
+        <img :src="project.gallery[0].src" class="h-40 border object-cover" />
         <div class="my-2 font-semibold">{{ project.name }}</div>
         <span
           v-for="(skill, index) in project.skills"
