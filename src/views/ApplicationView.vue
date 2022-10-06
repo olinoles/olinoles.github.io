@@ -14,6 +14,7 @@
         <a
           v-for="item in navigation"
           :key="item.name"
+          :target="item.target"
           :href="item.href"
           :class="[
             item.current
@@ -155,9 +156,14 @@ function toggleDarkMode() {
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#about", current: false },
-  { name: "Skills", href: "#skills", current: false },
+  { name: "Tools & Tech", href: "#skills", current: false },
   { name: "Projects", href: "#projects", current: false },
-  { name: "Download CV", href: "#", current: false },
+  {
+    name: "Download CV",
+    href: "/Oliver-Noles-CV.pdf",
+    target: "_blank",
+    current: false,
+  },
 ];
 </script>
 
