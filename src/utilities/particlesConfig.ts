@@ -1,4 +1,4 @@
-const particles = {
+const particles: any = {
   number: {
     value: 355,
     density: {
