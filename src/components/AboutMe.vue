@@ -28,9 +28,9 @@
         <br />
         Outside of work, I enjoy snowboarding, hiking, and play in a social
         soccer league. I'm also a craft beer nerd and have recently been
-        interested electric vehicles! I'm very entrepreneurially minded and love
-        to talk startup ideas. I also have a cat named Chino who distracts me
-        while working.
+        interested in electric vehicles! I'm very entrepreneurially minded and
+        love to talk startup ideas. I also have a cat named Chino who distracts
+        me while working.
         <br />
         <br />
         Thanks so much for visiting my online portfolio. If you'd like to chat,
