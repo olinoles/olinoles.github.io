@@ -53,6 +53,7 @@
       <SkillsSection />
       <hr />
       <ProjectsSection />
+      <hr />
     </div>
     <FooterSection />
   </div>
