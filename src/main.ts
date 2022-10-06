@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import Particles from "vue3-particles";
 import { createPinia } from "pinia";
+import VueGtag from "vue-gtag";
 
 import "./assets/main.css";
 
@@ -24,5 +25,8 @@ if (
 app.use(router);
 app.use(pinia);
 app.use(Particles);
+app.use(VueGtag, {
+  config: { id: "G-0LKE97JV17" },
+});
 
 app.mount("#app");

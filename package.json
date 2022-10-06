@@ -15,6 +15,7 @@
     "pinia": "^2.0.22",
     "tsparticles": "^2.3.2",
     "vue": "^3.2.38",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.1.5",
     "vue3-particles": "^2.3.2"
   },

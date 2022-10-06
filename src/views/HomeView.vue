@@ -69,6 +69,7 @@ import { useAppState } from "@/store/app";
 import SkillsSection from "../components/SkillsSection.vue";
 import ProjectsSection from "../components/ProjectsSection.vue";
 import FooterSection from "../components/FooterSection.vue";
+import { pageview } from "vue-gtag";
 
 watch(
   () => useAppState().darkMode,
@@ -87,6 +88,10 @@ function restartGranim() {
 
 onMounted(() => {
   restartGranim();
+  pageview({
+    page_location: window.location.href,
+    page_title: document.title,
+  });
 });
 </script>
 
