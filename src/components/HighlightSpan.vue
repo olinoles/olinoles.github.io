@@ -1,6 +1,6 @@
 <template>
   <span
-    class="rounded-md px-1 py-0.5 cursor-default"
+    class="my-2 cursor-default rounded-md px-1"
     :class="
       darkMode
         ? 'bg-slate-800 hover:bg-slate-700'
