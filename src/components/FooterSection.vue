@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-32 w-full flex-col items-center justify-center dark:bg-slate-800"
-  >
+  <div class="flex h-32 w-full flex-col items-center justify-center">
     <div>© Oliver Noles {{ currentYear }}</div>
     <div class="mt-3 text-xs">
       website
