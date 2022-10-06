@@ -20,11 +20,12 @@
           </div>
         </div>
         <div class="m-3 flex w-full items-start sm:w-fit lg:ml-auto">
-          <div
+          <a
+            href="#projects"
             class="m-2 w-1/2 cursor-pointer whitespace-nowrap rounded-md border px-4 py-2 text-center font-bold hover:bg-gray-50 dark:border-slate-700 dark:hover:bg-slate-700"
           >
             View projects
-          </div>
+          </a>
 
           <a
             href="https://www.linkedin.com/in/olivernoles/"
