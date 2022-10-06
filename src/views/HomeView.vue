@@ -25,7 +25,10 @@
           >
             View projects
           </div>
-          <div
+
+          <a
+            href="https://www.linkedin.com/in/olivernoles/"
+            target="_blank"
             class="m-2 inline-flex w-1/2 cursor-pointer items-center justify-center rounded-md bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700"
           >
             <svg
@@ -39,8 +42,9 @@
                 d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"
               ></path>
             </svg>
+
             Connect
-          </div>
+          </a>
         </div>
       </div>
       <hr />
@@ -49,8 +53,8 @@
       <SkillsSection />
       <hr />
       <ProjectsSection />
-      <div class="mb-32" />
     </div>
+    <FooterSection />
   </div>
 </template>
 
@@ -62,6 +66,7 @@ import ParticleSection from "@/components/ParticlesSection.vue";
 import { useAppState } from "@/store/app";
 import SkillsSection from "../components/SkillsSection.vue";
 import ProjectsSection from "../components/ProjectsSection.vue";
+import FooterSection from "../components/FooterSection.vue";
 
 watch(
   () => useAppState().darkMode,
