@@ -16,16 +16,16 @@ export const projects: Project[] = [
     name: "Surf Life Saving Incident Platform",
     gallery: [
       {
-        src: "src/assets/projects/sls/main.jpg",
+        src: "projects/sls/main.jpg",
       },
       {
-        src: "/src/assets/projects/sls/1.jpg",
+        src: "/projects/sls/1.jpg",
       },
       {
-        src: "src/assets/projects/sls/2.jpg",
+        src: "projects/sls/2.jpg",
       },
       {
-        src: "src/assets/projects/sls/3.jpg",
+        src: "projects/sls/3.jpg",
       },
     ],
     description:
@@ -36,16 +36,16 @@ export const projects: Project[] = [
     name: "KiwiQuads Ecommerce Website",
     gallery: [
       {
-        src: "src/assets/projects/kiwiquads/main.jpg",
+        src: "projects/kiwiquads/main.jpg",
       },
       {
-        src: "src/assets/projects/kiwiquads/1.jpg",
+        src: "projects/kiwiquads/1.jpg",
       },
       {
-        src: "src/assets/projects/kiwiquads/2.jpg",
+        src: "projects/kiwiquads/2.jpg",
       },
       {
-        src: "src/assets/projects/kiwiquads/3.jpg",
+        src: "projects/kiwiquads/3.jpg",
       },
     ],
     description:
@@ -56,16 +56,16 @@ export const projects: Project[] = [
     name: "Ecommerce Fulfillment SaaS",
     gallery: [
       {
-        src: "src/assets/projects/dispatch/main.jpg",
+        src: "projects/dispatch/main.jpg",
       },
       {
-        src: "src/assets/projects/dispatch/2.jpg",
+        src: "projects/dispatch/2.jpg",
       },
       {
-        src: "src/assets/projects/dispatch/3.jpg",
+        src: "projects/dispatch/3.jpg",
       },
       {
-        src: "src/assets/projects/dispatch/4.jpg",
+        src: "projects/dispatch/4.jpg",
       },
     ],
     description:
@@ -76,16 +76,16 @@ export const projects: Project[] = [
     name: "TheMarket Storefront",
     gallery: [
       {
-        src: "src/assets/projects/themarket/main.jpg",
+        src: "projects/themarket/main.jpg",
       },
       {
-        src: "src/assets/projects/themarket/1.jpg",
+        src: "projects/themarket/1.jpg",
       },
       {
-        src: "src/assets/projects/themarket/2.jpg",
+        src: "projects/themarket/2.jpg",
       },
       {
-        src: "src/assets/projects/themarket/3.jpg",
+        src: "projects/themarket/3.jpg",
       },
     ],
     description:
@@ -96,19 +96,19 @@ export const projects: Project[] = [
     name: "ASColour Interactive Display",
     gallery: [
       {
-        src: "src/assets/projects/ascolour/main.jpg",
+        src: "projects/ascolour/main.jpg",
       },
       {
-        src: "src/assets/projects/ascolour/1.jpg",
+        src: "projects/ascolour/1.jpg",
       },
       {
-        src: "src/assets/projects/ascolour/2.jpg",
+        src: "projects/ascolour/2.jpg",
       },
       {
-        src: "src/assets/projects/ascolour/3.jpg",
+        src: "projects/ascolour/3.jpg",
       },
       {
-        src: "src/assets/projects/ascolour/4.jpg",
+        src: "projects/ascolour/4.jpg",
       },
     ],
     description:

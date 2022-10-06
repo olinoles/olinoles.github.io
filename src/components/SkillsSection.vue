@@ -39,7 +39,7 @@
         :key="`skill-${index}`"
       >
         <div class="skill-image">
-          <img :src="darkMode ? skill.darkImage : skill.image" />
+          <img :src="`skills/${darkMode ? skill.darkImage : skill.image}`" />
         </div>
         <div class="skill-text">
           {{ skill.name }}
@@ -50,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import { skills } from "@/utilities/constants";
+import { skills } from "@/utilities/skills";
 import { useAppState } from "@/store/app";
 import { computed, ref } from "vue";
 import HighlightSpan from "./HighlightSpan.vue";
