@@ -154,9 +154,9 @@ function toggleDarkMode() {
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Skills", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "About", href: "#about", current: false },
+  { name: "Skills", href: "#skills", current: false },
+  { name: "Projects", href: "#projects", current: false },
   { name: "Download CV", href: "#", current: false },
 ];
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="my-10 lg:mx-3">
+    <a class="absolute top-0 -mt-20" name="projects" />
     <h1>Project Showcase</h1>
     <div
       class="flex flex-col flex-wrap items-center rounded-md p-5 md:flex-row"

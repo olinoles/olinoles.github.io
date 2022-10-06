@@ -2,6 +2,7 @@
   <div
     class="mx-8 my-20 flex flex-col items-center rounded-md md:flex-row lg:mx-3"
   >
+    <a class="absolute top-0 -mt-20" name="skills" />
     <div class="my-3 mb-10 max-w-md" id="skills-description">
       <h1>My Tools & Tech</h1>
       <p>I use a range of tools and technology to achieve success.</p>

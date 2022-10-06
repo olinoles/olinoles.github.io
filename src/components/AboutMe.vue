@@ -1,5 +1,6 @@
 <template>
   <div class="mx-8 mt-10 mb-20 grid grid-cols-7 gap-3 sm:grid-cols-9 lg:mx-5">
+    <a class="absolute top-0 -mt-20" name="about" />
     <h2 class="col-span-2 whitespace-nowrap text-lg font-bold">About me</h2>
     <div class="col-span-7">
       Hi, I'm Oliver! I'm an Auckland-based tech enthusiast experienced in web
@@ -101,7 +102,7 @@ const isCollapsed: Ref<Boolean> = ref(false);
 const readmore = ref();
 
 function readMoreClicked() {
-  const element: Ref<HTMLDivElement> = readmore.value;
+  const element: any = readmore.value;
   if (!element) return;
   if (!isCollapsed.value) {
     element.style.height = `${element.scrollHeight}px`;
