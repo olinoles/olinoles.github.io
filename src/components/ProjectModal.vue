@@ -72,7 +72,7 @@
                           v-for="(photo, index) in localProject?.gallery"
                           :key="`photo-${index}`"
                           @click="selectedImage = photo"
-                          class="relative m-2 mr-5 flex cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4 md:h-32"
+                          class="relative m-2 mr-5 flex cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:border-2 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4 md:h-32 md:hover:border-0"
                         >
                           <span class="inset-0 overflow-hidden rounded-md"
                             ><img
