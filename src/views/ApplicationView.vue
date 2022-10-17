@@ -14,7 +14,6 @@
         <a
           v-for="item in navigation"
           :key="item.name"
-          :target="item.target"
           :href="item.href"
           :class="[
             item.current
