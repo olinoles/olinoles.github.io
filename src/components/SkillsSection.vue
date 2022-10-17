@@ -30,9 +30,7 @@
         <HighlightSpan text="Github" :highlightFn="highlightSkill" />.
       </p>
       <h3>
-        <a href="/Oliver-Noles-CV.pdf" target="_blank"
-          >+ More skills listed on CV</a
-        >
+        + More skills listed on CV (available on request)
       </h3>
     </div>
     <div class="skill-container">
