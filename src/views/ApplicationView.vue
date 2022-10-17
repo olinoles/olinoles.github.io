@@ -158,12 +158,6 @@ const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Tools & Tech", href: "#skills", current: false },
   { name: "Projects", href: "#projects", current: false },
-  {
-    name: "Download CV",
-    href: "/Oliver-Noles-CV.pdf",
-    target: "_blank",
-    current: false,
-  },
 ];
 </script>
 
