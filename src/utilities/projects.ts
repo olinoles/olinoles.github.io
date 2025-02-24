@@ -86,7 +86,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "Astroship is an Ecommerce SaaS I designed in 2020. The software aims to automate the Ecommerce fulfillment flow from when orders are placed, to when they are shipped to the customer. The software integrates with Ecommerce platforms such as Shopify and WooCommerce to import business data.\n\nI was the developer responsible for building both the front-end and back-ends for this platform. The front-end uses the latest Vue3 Composition API with Typescript and has CSS powered by Tailwind.\nThe backend is a serverless API powered by NoSQL DynamoDB and AWS Lambda.",
+      "Astroship is an Ecommerce SaaS I designed in 2020. The software aims to automate the Ecommerce fulfillment flow from when orders are placed, to when they are shipped to the customer. The software integrates with Ecommerce platforms such as Shopify and WooCommerce to import business data.\n\nThe front-end uses the latest Vue3 Composition API with Typescript and has CSS powered by Tailwind.\nThe backend is a serverless API powered by NoSQL DynamoDB and AWS Lambda.",
     skills: ["Vue", "Javascript", "NoSQL", "Node API"],
   },
   {
