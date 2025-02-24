@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1199 600">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #c8222f;
+      }
+
+      .st1 {
+        fill: #232d65;
+      }
+
+      .st2 {
+        fill: #fefefe;
+      }
+
+      .st3 {
+        fill: #242e65;
+      }
+
+      .st4 {
+        fill: #c82230;
+      }
+
+      .st5 {
+        fill: #fefdfe;
+      }
+    </style>
+  </defs>
+  <g id="JOiWsG">
+    <g>
+      <polygon class="st0" points="660 0 660 240 1200 240 1200 360 660 360 660 600 540 600 540 360 0 360 0 240 540 240 540 0 660 0"/>
+      <polygon class="st2" points="135 0 500 183 500 0 540 0 540 240 0 240 0 200 265 199.5 0 67 0 45 310.5 200 399 200 1 0 135 0"/>
+      <polygon class="st2" points="1200 360 1200 400 935 400.5 1200 533 1200 555 889.5 400 801 400 1199 600 1065 600 700 417 700 600 660 600 660 360 1200 360"/>
+      <polygon class="st2" points="700 0 700 183 1065 0 1110 0 712 200 800.5 200 1199 0 1200 0 1200 67 935 199.5 1200 200 1200 240 660 240 660 0 700 0"/>
+      <polygon class="st5" points="0 360 540 360 540 600 500 600 500 417 135 600 90 600 488 400 399.5 400 1 600 0 600 0 533 265 400.5 0 400 0 360"/>
+      <polygon class="st1" points="500 0 500 183 135 0 500 0"/>
+      <polygon class="st1" points="1065 0 700 183 700 0 1065 0"/>
+      <polygon class="st1" points="500 600 135 600 500 417 500 600"/>
+      <polygon class="st1" points="1065 600 700 600 700 417 1065 600"/>
+      <polygon class="st4" points="1199 0 800.5 200 712 200 1110 0 1199 0"/>
+      <polygon class="st4" points="1 600 399.5 400 488 400 90 600 1 600"/>
+      <polygon class="st1" points="0 67 265 199.5 0 200 0 67"/>
+      <polygon class="st3" points="1200 200 935 199.5 1200 67 1200 200"/>
+      <polygon class="st1" points="0 400 265 400.5 0 533 0 400"/>
+      <polygon class="st3" points="1200 400 1200 533 935 400.5 1200 400"/>
+      <polygon class="st4" points="1 0 399 200 310.5 200 0 45 0 0 1 0"/>
+      <polygon class="st4" points="1200 555 1200 600 1199 600 801 400 889.5 400 1200 555"/>
+    </g>
+  </g>
+</svg>
