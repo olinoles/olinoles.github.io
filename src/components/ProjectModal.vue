@@ -17,7 +17,7 @@
 
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="flex min-h-full md:items-end justify-center p-4 text-center sm:items-center sm:p-0"
         >
           <TransitionChild
             as="template"
@@ -29,7 +29,7 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 text-left shadow-xl transition-all dark:bg-slate-900 sm:mx-3 sm:mb-8 sm:mt-20 sm:w-full sm:max-w-7xl sm:p-6"
+              class="relative flex transform md:max-h-[80dvh] overflow-hidden rounded-lg bg-white px-4 text-left shadow-xl transition-all dark:bg-slate-900 sm:mx-3 sm:mb-8 sm:mt-20 sm:w-full sm:max-w-7xl sm:p-6"
             >
               <div class="absolute top-0 right-0 z-10 pt-4 pr-4">
                 <button
@@ -56,7 +56,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="sm:flex sm:items-start">
+              <div class="sm:flex sm:items-start min-h-0 overflow-y-auto">
                 <div class="mt-4 sm:mt-0 sm:ml-4">
                   <DialogTitle
                     as="h3"
@@ -64,10 +64,10 @@
                     >{{ localProject?.name }}</DialogTitle
                   >
                   <div class="m-5 grid grid-cols-8 gap-10">
-                    <div class="order-2 col-span-8 md:order-1 md:col-span-2">
-                      <div
-                        class="grid grid-cols-3 overflow-y-auto md:h-96 md:grid-cols-1 md:gap-6"
-                      >
+                    <div
+                      class="order-2 col-span-8 md:order-1 overflow-y-auto md:h-full md:col-span-2 min-h-0 max-h-full"
+                    >
+                      <div class="grid grid-cols-3 md:grid-cols-1 md:gap-6">
                         <button
                           v-for="(photo, index) in localProject?.gallery"
                           :key="`photo-${index}`"

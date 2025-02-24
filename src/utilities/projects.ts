@@ -13,6 +13,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Mapto.app - Map builder",
+    gallery: [
+      {
+        src: "projects/mapto/main.jpg",
+      },
+      {
+        src: "/projects/mapto/1.jpg",
+      },
+      {
+        src: "/projects/mapto/2.jpg",
+      },
+    ],
+    description:
+      "Mapto (https://mapto.app) is a web-based map building tool allowing users to create an interactive, creative map using custom images. I describe it as 'like Canva, for maps'. It's currently a work-in-progress I'm completing in my spare time and hope to officially launch soon. It features a powerful React front-end with a Node.js backend and Postgres database.\n\nI built this project to learn more about the Mapbox API and to create a tool that I could use in my other projects. I've enjoyed the challenge of building a complex front-end application.",
+    skills: ["React", "Typescript", "Node", "Postgres", "Mapbox"],
+  },
+  {
     name: "Surf Life Saving Incident Platform",
     gallery: [
       {
@@ -69,7 +86,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "Astroship is an Ecommerce SaaS startup I cofounded in 2021. The software aims to automate the Ecommerce fulfillment flow from when orders are placed, to when they are shipped to the customer. The software integrates with Ecommerce platforms such as Shopify and WooCommerce to import business data.\n\nI was the developer responsible for building both the front-end and back-ends for this platform. The front-end uses the latest Vue3 Composition API with Typescript and has CSS powered by Tailwind.\nThe backend is a serverless API powered by NoSQL DynamoDB and AWS Lambda.",
+      "Astroship is an Ecommerce SaaS I designed in 2020. The software aims to automate the Ecommerce fulfillment flow from when orders are placed, to when they are shipped to the customer. The software integrates with Ecommerce platforms such as Shopify and WooCommerce to import business data.\n\nI was the developer responsible for building both the front-end and back-ends for this platform. The front-end uses the latest Vue3 Composition API with Typescript and has CSS powered by Tailwind.\nThe backend is a serverless API powered by NoSQL DynamoDB and AWS Lambda.",
     skills: ["Vue", "Javascript", "NoSQL", "Node API"],
   },
   {

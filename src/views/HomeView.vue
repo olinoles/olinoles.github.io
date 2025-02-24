@@ -15,8 +15,17 @@
         />
         <div class="mx-5 my-2 text-center lg:m-5 lg:text-left">
           <h1 class="select-none text-3xl font-bold">Oliver Noles</h1>
-          <div class="text-md mt-1 text-gray-400 lg:text-lg">
-            Software Engineer from Auckland, New Zealand
+          <div class="text-md mt-1 text-gray-500 lg:text-lg">
+            Software Engineer from London, UK
+          </div>
+          <div class="text-md mt-1 font-medium text-gray-400 lg:text-sm">
+            Technical Lead / Founding Engineer at
+            <a
+              href="https://www.youdooh.com/"
+              target="_blank"
+              class="text-sky-600 hover:text-blue-700 dark:text-sky-400 dark:hover:text-blue-300"
+              >youdooh</a
+            >
           </div>
         </div>
         <div class="m-3 flex w-full items-start sm:w-fit lg:ml-auto">

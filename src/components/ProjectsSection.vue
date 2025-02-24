@@ -3,7 +3,7 @@
     <a class="absolute top-0 -mt-20" name="projects" />
     <h1>Project Showcase</h1>
     <div
-      class="flex flex-col flex-wrap items-center rounded-md p-5 md:flex-row"
+      class="flex flex-col flex-wrap items-start rounded-md p-5 md:flex-row"
     >
       <div
         class="project-card group p-5"

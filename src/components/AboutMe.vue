@@ -3,14 +3,18 @@
     <a class="absolute top-0 -mt-20" name="about" />
     <h2 class="col-span-2 whitespace-nowrap text-lg font-bold">About me</h2>
     <div class="col-span-7">
-      Hi, I'm Oliver! I'm an Auckland-based tech enthusiast experienced in web
-      technologies, creative projects, and UI design. I love learning and am
-      always striving to gain new skills and experiences.
+      Hi, I'm Oliver! I'm a London-based full-stack engineer with deep
+      experience across the entire development stack - frontend, backend, and
+      infrastructure. I love tackling complex problems and thrive on building
+      robust, scalable systems that power modern web applications.
       <br />
       <br />
-      My specialty is building Front-end experiences for SaaS platforms and
-      Ecommerce. I've helped businesses build large-scale Ecommerce sites and
-      launch successful SaaS platforms.
+      I specialise in architecting and developing full-stack SaaS platforms,
+      working with frontend frameworks like React and Vue, backend services in
+      Node.js and PostgreSQL, and infrastructure solutions involving cloud
+      containers, CI/CD pipelines, and database optimisation. Whether it's
+      designing intuitive user interfaces, building performant APIs, or managing
+      cloud deployments, I enjoy getting hands-on with every part of the stack.
       <br />
 
       <div
@@ -19,23 +23,20 @@
         class="transition-height h-10 overflow-hidden duration-300 ease-out"
       >
         <br />
-        I am most experienced in front-end development with Javascript
-        (including mobile apps), and have worked with many front-end
-        technologies including Vue, React and React-native. I really enjoy
-        working with designers and UI artists to create amazing experiences for
-        end-users.
+        Beyond just writing code, I love leading engineering initiatives,
+        mentoring teams, and optimising development workflows to improve
+        efficiency and scalability. I'm a firm believer in clean architecture,
+        strong DevOps practices, and delivering high-quality software that makes
+        an impact.
         <br />
         <br />
-        Outside of work, I enjoy snowboarding, hiking, and play in a social
-        soccer league. I'm also a craft beer nerd and have recently been
-        interested in electric vehicles! I'm very entrepreneurially minded and
-        love to talk startup ideas. I also have a cat named Chino who distracts
-        me while working.
+        Outside of work, you’ll find me snowboarding, hiking, or bouldering. I’m
+        also deeply passionate about startups and product development, always
+        eager to discuss new ideas and innovative solutions.
         <br />
         <br />
-        Thanks so much for visiting my online portfolio. If you'd like to chat,
-        please get in touch!
-        <img src="@/assets/chino.png" class="my-5 rounded" width="350" />
+        Thanks for stopping by! If you're interested in working together or just
+        want to chat tech, feel free to reach out.
       </div>
       <div
         class="my-3 cursor-pointer font-semibold text-slate-500 hover:text-slate-400"
@@ -49,10 +50,10 @@
         <div>
           <p class="info-header">Location</p>
           <img
-            src="@/assets/icons/nz-icon.svg"
-            class="mr-2 inline-block h-4 w-4"
+            src="@/assets/icons/uk-icon.svg"
+            class="mr-2 inline-block size-5 object-cover rounded-full"
           />
-          <p class="info-body inline-block">Auckland, NZ</p>
+          <p class="info-body inline-block">London, UK</p>
         </div>
         <div>
           <p class="info-header">Email</p>

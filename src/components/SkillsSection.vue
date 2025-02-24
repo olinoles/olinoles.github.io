@@ -10,8 +10,8 @@
       <p>
         <HighlightSpan text="Javascript" :highlightFn="highlightSkill" />
         frameworks including
-        <HighlightSpan text="Vue" :highlightFn="highlightSkill" />,
-        <HighlightSpan text="React" :highlightFn="highlightSkill" />, and
+        <HighlightSpan text="React" :highlightFn="highlightSkill" />,
+        <HighlightSpan text="Vue" :highlightFn="highlightSkill" />, and
         <HighlightSpan text="Node" :highlightFn="highlightSkill" /> in the
         backend.
       </p>
