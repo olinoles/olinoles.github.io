@@ -46,7 +46,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "I was contracted by Lime Digital to build this web platform for Surf Life Saving NZ. This SPA uses a Google Firebase backend to power a real-time incident reporting platform for use by SLS NZ staff.\n\n The platform uses VueJS and a UI library for the front-end. I worked closely with a designer and project owner to help build the application ready for the 2022 Summer release. \n\nPrior to this project, I hadn't worked with Firebase or any Map libraries, so I enjoyed taking on the challenge of learning and implementing these technologies into this project to achieve its goals.",
+      "I was contracted by Lime Digital to build this web platform for Surf Life Saving NZ. This SPA uses a Google Firebase backend to power a real-time incident reporting platform for use by SLS NZ staff.\n\n The platform uses VueJS and a UI library for the front-end. I worked closely with a designer and project owner to help build the application ready for the 2020 Summer release. \n\nPrior to this project, I hadn't worked with Firebase or any Map libraries, so I enjoyed taking on the challenge of learning and implementing these technologies into this project to achieve its goals.",
     skills: ["Vue", "Javascript", "Firebase"],
   },
   {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "TheMarket.com is one of New Zealand's largest Ecommerce businesses. It is owned by TheWarehouse Group. I worked for TheMarket as a Front-end software engineer from 2021-2022 and built and maintained the main Storefront website.\n\nWhile working at TheMarket, I was responsible for building and maintaining the storefront VueJS SPA, collaborating with product and design teams, and conducting code reviews with other developers.",
+      "TheMarket.com is one of New Zealand's largest Ecommerce businesses. It is owned by TheWarehouse Group. I worked for TheMarket as a full-stack software engineer from 2020-2022 and built and maintained the main Storefront website.\n\nWhile working at TheMarket, I was responsible for building and maintaining the storefront VueJS SPA, collaborating with product and design teams, and conducting code reviews with other developers.",
     skills: ["Vue", "Javascript", "HTML"],
   },
   {
