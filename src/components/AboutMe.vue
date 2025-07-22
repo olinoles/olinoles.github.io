@@ -3,18 +3,20 @@
     <a class="absolute top-0 -mt-20" name="about" />
     <h2 class="col-span-2 whitespace-nowrap text-lg font-bold">About me</h2>
     <div class="col-span-7">
-      Hi, I'm Oliver! I'm a London-based full-stack engineer with deep
-      experience across the entire development stack - frontend, backend, and
-      infrastructure. I love tackling complex problems and thrive on building
-      robust, scalable systems that power modern web applications.
+      Hi, I'm Oliver! I'm a Kiwi (New Zealander) living in London, and my
+      passion is taking ideas from zero to one - building startups and products
+      from scratch. As a full-stack engineer, I thrive on the challenge of
+      turning blank canvases into robust, scalable platforms that power modern
+      web applications.
       <br />
       <br />
-      I specialise in architecting and developing full-stack SaaS platforms,
-      working with frontend frameworks like React and Vue, backend services in
-      Node.js and PostgreSQL, and infrastructure solutions involving cloud
-      containers, CI/CD pipelines, and database optimisation. Whether it's
-      designing intuitive user interfaces, building performant APIs, or managing
-      cloud deployments, I enjoy getting hands-on with every part of the stack.
+      My specialty lies in architecting and developing full-stack SaaS platforms
+      from the ground up, working with frontend frameworks like React and Vue,
+      backend services in Node.js and PostgreSQL, and infrastructure solutions
+      involving cloud containers, CI/CD pipelines, and database optimisation.
+      Whether it's designing intuitive user interfaces, building performant
+      APIs, or managing cloud deployments, I love being hands-on at every stage
+      of the journey - from the first line of code to launch and beyond.
       <br />
 
       <div
@@ -23,11 +25,11 @@
         class="transition-height h-10 overflow-hidden duration-300 ease-out"
       >
         <br />
-        Beyond just writing code, I love leading engineering initiatives,
-        mentoring teams, and optimising development workflows to improve
-        efficiency and scalability. I'm a firm believer in clean architecture,
-        strong DevOps practices, and delivering high-quality software that makes
-        an impact.
+        Beyond just writing code, I excel at leading engineering initiatives,
+        mentoring teams, and optimising development workflows to accelerate
+        early-stage growth. I'm passionate about clean architecture, strong
+        DevOps practices, and delivering high-quality software that makes a real
+        impact - especially in the fast-paced world of startups.
         <br />
         <br />
         Outside of work, you’ll find me snowboarding, hiking, or bouldering. I’m

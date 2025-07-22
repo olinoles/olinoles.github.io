@@ -26,7 +26,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "Mapto (https://mapto.app) is a web-based map building tool allowing users to create an interactive, creative map using custom images. I describe it as 'like Canva, for maps'. It's currently a work-in-progress I'm completing in my spare time and hope to officially launch soon. It features a powerful React front-end with a Node.js backend and Postgres database.\n\nI built this project to learn more about the Mapbox API and to create a tool that I could use in my other projects. I've enjoyed the challenge of building a complex front-end application.",
+      'Mapto (<a href="https://mapto.app" target="_blank" rel="noopener">mapto.app</a>) is a web-based map building tool allowing users to create an interactive, creative map using custom images. I describe it as \'like Canva, for maps\'. It\'s currently a work-in-progress I\'m completing in my spare time and hope to officially launch soon. It features a powerful React front-end with a Node.js backend and Postgres database.<br><br>I built this project to learn more about the Mapbox API and to create a tool that I could use in my other projects. I\'ve enjoyed the challenge of building a complex front-end application.',
     skills: ["React", "Typescript", "Node", "Postgres", "Mapbox"],
   },
   {
@@ -129,7 +129,7 @@ export const projects: Project[] = [
       },
     ],
     description:
-      "The AS Colourmatic is an interactive storefront display designed to analyse the user's clothing colour choices and prescribe them a complimentary 'better colour'.\n\nI was chosen to work on this project for my experience using Adobe Animate and ActionScript. I worked closely with another developer to build a front and back-end system that would provide a fun experience for the users.\n\nI was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.",
+      "The AS Colourmatic (<a href='https://fcdn.me/ce5/084/as-colour-colourmatic-68a5b759dfba4af92dfe8b927f.mp4' target='_blank' rel='noopener'>video</a>) is an interactive storefront display designed to analyse the user's clothing colour choices and prescribe them a complimentary 'better colour'.\n\nI was chosen to work on this project for my experience using Adobe Animate and ActionScript. I worked closely with another developer to build a front and back-end system that would provide a fun experience for the users.\n\nI was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.",
     skills: ["C#", "Javascript", "CSS"],
   },
 ];
